@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+        <li>f</li>
+    </ul>
+    <section> aa </section>
+    <section> bb </section>
+    <script>
+        const tagList = document.querySelectorAll('*')
+        const obj = {}
+        Array.from(tagList, item => obj.hasOwnProperty(item.nodeName) ? obj[item.nodeName]++ : obj[item.nodeName] = 1)
+        const sortArr = Object.entries(obj).sort((pre, next) => next[1] - pre[1]).slice(0, 3)
+        console.log(sortArr)
+    </script>
+</body>
+
+</html>
