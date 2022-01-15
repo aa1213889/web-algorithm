@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "noImplicitAny": true,
+      "outDir": "./dist",
+      "sourceMap": true
+  },
+  "include": [
+      "src/**/*"
+, "src/4.数组去重/index.js"  ]
+}

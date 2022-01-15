@@ -18,7 +18,6 @@ const linearTreeArr: ILineTreeNode[] = [
   { id: '21', pid: '2', text: '菜单2-1' },
   { id: '3', pid: null, text: '菜单3' }
 ]
-
 function getChildrenNode(linearList: ILineTreeNode[], pid: Pid, resultArr: ITreeNode[]): void {
   linearList.map((item) => (item.pid === pid ? resultArr.push(item) : ''))
   for (const item of resultArr) {
